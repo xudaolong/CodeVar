@@ -1,0 +1,17 @@
+{
+  "name": "CodeVar",
+  "version": "1.0.0",
+  "description": "翻译",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "alfy": "^0.6.0"
+  },
+  "dependencies": {
+    "lodash.without": "^4.4.0"
+  }
+}
