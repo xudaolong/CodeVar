@@ -6,8 +6,21 @@
 	<string>codevar</string>
 	<key>connections</key>
 	<dict>
-		<key>7058EC8E-E2B9-4134-A85D-C92BE50493FD</key>
+		<key>0A329E4B-AB21-41F7-A869-D878DF4EAE92</key>
 		<array/>
+		<key>7058EC8E-E2B9-4134-A85D-C92BE50493FD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A329E4B-AB21-41F7-A869-D878DF4EAE92</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Xudaolong</string>
@@ -19,6 +32,23 @@
 	<string>CodeVar</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>0A329E4B-AB21-41F7-A869-D878DF4EAE92</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -41,9 +71,9 @@
 				<key>runningsubtext</key>
 				<string>请稍等...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<string>./node_modules/.bin/run-node index.js {query}</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
@@ -67,12 +97,19 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>0A329E4B-AB21-41F7-A869-D878DF4EAE92</key>
+		<dict>
+			<key>xpos</key>
+			<integer>470</integer>
+			<key>ypos</key>
+			<integer>110</integer>
+		</dict>
 		<key>7058EC8E-E2B9-4134-A85D-C92BE50493FD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>260</integer>
+			<integer>130</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>110</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

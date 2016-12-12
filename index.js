@@ -39,8 +39,7 @@ alfy.fetch('http://fanyi.youdao.com/openapi.do', {
 }).then(result => {
 
     if (result.errorCode == 0) {
-        // 计算并标志
-        let count = 0;
+        //结果
         let result_value = [];
         // 过滤中文
         let reg = /^[a-zA-Z ]/;
@@ -51,7 +50,7 @@ alfy.fetch('http://fanyi.youdao.com/openapi.do', {
                 result_value.push({
                     title: hump(result_translation[i]),
                     subtitle: `标准翻译 => ${result_translation[i]}`,
-                    arg: count++,
+                    arg: hump(result_translation[i]),
                 });
             }
         }
@@ -65,7 +64,7 @@ alfy.fetch('http://fanyi.youdao.com/openapi.do', {
                         result_value.push({
                             title: hump(result_web[i].value[j]),
                             subtitle: `网络翻译 => ${result_web[i].value[j]}`,
-                            arg: count++,
+                            arg: hump(result_web[i].value[j]),
                         });
                     }
                 }
