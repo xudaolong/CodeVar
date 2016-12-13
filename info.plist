@@ -277,7 +277,7 @@
 			<key>xpos</key>
 			<integer>130</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>20</integer>
 		</dict>
 		<key>8039E6FB-F0FA-419B-B00E-048A1DBA460A</key>
 		<dict>
@@ -298,7 +298,7 @@
 			<key>xpos</key>
 			<integer>130</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>350</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
