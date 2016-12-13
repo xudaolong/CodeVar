@@ -21,6 +21,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8039E6FB-F0FA-419B-B00E-048A1DBA460A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A329E4B-AB21-41F7-A869-D878DF4EAE92</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B7123C78-ADE3-48F7-A520-5BBA396F6EC9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A329E4B-AB21-41F7-A869-D878DF4EAE92</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Xudaolong</string>
@@ -42,7 +68,7 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
-				<string>co</string>
+				<string>xt</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -62,7 +88,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>翻译</string>
+				<string>小驼峰命名法</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -92,6 +118,92 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>dt</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>请稍等...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node bigHump.js {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>大驼峰命名法</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8039E6FB-F0FA-419B-B00E-048A1DBA460A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>xh</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>请等待...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node underline.js {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>下划线法命名</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B7123C78-ADE3-48F7-A520-5BBA396F6EC9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -109,7 +221,21 @@
 			<key>xpos</key>
 			<integer>130</integer>
 			<key>ypos</key>
-			<integer>110</integer>
+			<integer>10</integer>
+		</dict>
+		<key>8039E6FB-F0FA-419B-B00E-048A1DBA460A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>130</integer>
+			<key>ypos</key>
+			<integer>130</integer>
+		</dict>
+		<key>B7123C78-ADE3-48F7-A520-5BBA396F6EC9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>130</integer>
+			<key>ypos</key>
+			<integer>240</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
