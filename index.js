@@ -11,8 +11,6 @@
 
 'use strict';
 
-const alfy = require('alfy');
-const without = require('lodash.without');
 const config = require('./Configuration/variableGlobale.js');
 const style = require('./Configuration/variableStyle.js');
 

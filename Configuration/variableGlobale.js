@@ -24,5 +24,19 @@ module.exports = {
             version: '1.1',
             q: alfy.input
         }
+    },
+    filter:{
+        prep:[
+            'and','or','the','a','at','of'
+        ],
+        prefix:[
+
+        ],
+        suffix:[
+            'ing','ed','ly'
+        ],
+        verb:[
+            'was'
+        ]
     }
 };

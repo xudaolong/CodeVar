@@ -12,7 +12,7 @@
 'use strict';
 
 const alfy = require('alfy');
-const without = require('lodash.without');
+const filter = require('./variableFilter.js');
 
 module.exports = {
     core: function (api, params, style) {
@@ -58,9 +58,8 @@ module.exports = {
             }
         });
     },
-    bigHump: function bigHump(s) {
-        // 过滤冠词,有需要的自己添加咯
-        let strArr = without(s.split(' '), 'the', 'The');
+    bigHump: function (s) {
+        let strArr = filter.run(s);
         // 首单词首小写
         strArr[0] = strArr[0].toLowerCase();
         strArr[0] = strArr[0].charAt(0).toUpperCase() + strArr[0].substring(1);
@@ -70,9 +69,8 @@ module.exports = {
         }
         return strArr.join('');
     },
-    hump: function hump(str) {
-        // 过滤冠词,有需要的自己添加咯
-        let strArr = without(str.split(' '), 'the', 'The');
+    hump: function (s) {
+        let strArr = filter.run(s);
         // 首单词首小写
         strArr[0] = strArr[0].toLowerCase();
         // 单词首字母大写
@@ -81,18 +79,15 @@ module.exports = {
         }
         return strArr.join('');
     },
-    namedConst: function hump(str) {
-        // 过滤冠词,有需要的自己添加咯
-        let strArr = without(str.split(' '), 'the', 'The');
+    namedConst: function (s) {
+        let strArr = filter.run(s);
         for (let i = 0; i < strArr.length; i++) {
             strArr[i] = strArr[i].toUpperCase();
         }
         return strArr.join('_');
     },
-    underline: function hump(str) {
-        // 过滤冠词,有需要的自己添加咯
-        let strArr = without(str.split(' '), 'the', 'The');
-
+    underline: function (s) {
+        let strArr = filter.run(s);
         for (let i = 0; i < strArr.length; i++) {
             strArr[i] = strArr[i].toLowerCase();
         }
