@@ -18,7 +18,7 @@ function hump(str){
     // 过滤冠词,有需要的自己添加咯
     let strArr=without(str.split(' '),'the','The');
     // 首单词首小写
-    strArr[0] = strArr[0].charAt(0).toLowerCase()+strArr[0].substring(1);
+    strArr[0] = strArr[0].toLowerCase();
     // 单词首字母大写
     for(let i=1;i<strArr.length;i++){
         strArr[i]=strArr[i].charAt(0).toUpperCase()+strArr[i].substring(1);
