@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>codevar</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>0A329E4B-AB21-41F7-A869-D878DF4EAE92</key>
@@ -302,6 +304,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/xudaolong/CodeVar</string>
 </dict>
 </plist>

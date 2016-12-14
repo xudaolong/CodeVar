@@ -16,5 +16,5 @@ const config = require('./Configuration/variableGlobale.js');
 const style = require('./Configuration/variableStyle.js');
 
 (function () {
-    style.core(config.youDaoApi,config.params,style.underline);
+    style.core(config.youDaoApi,config.getParams(),style.underline);
 })();

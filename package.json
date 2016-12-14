@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "lodash.difference": "^4.5.0",
+    "lodash.sample": "^4.2.1",
     "lodash.union": "^4.6.0",
     "lodash.without": "^4.4.0"
   }
