@@ -78,6 +78,10 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -95,7 +99,7 @@
 				<key>runningsubtext</key>
 				<string>请稍等...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js {query}</string>
+				<string>./node_modules/.bin/run-node xt.js {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -121,6 +125,10 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -138,7 +146,7 @@
 				<key>runningsubtext</key>
 				<string>请稍等...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node bigHump.js {query}</string>
+				<string>./node_modules/.bin/run-node dt.js {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -181,6 +189,10 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -198,7 +210,7 @@
 				<key>runningsubtext</key>
 				<string>请等待...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node underline.js {query}</string>
+				<string>./node_modules/.bin/run-node xh.js {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -224,6 +236,10 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -241,7 +257,7 @@
 				<key>runningsubtext</key>
 				<string>请稍等...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node NamedConstant.js {query}</string>
+				<string>./node_modules/.bin/run-node cl.js {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
