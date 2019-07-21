@@ -1,12 +1,12 @@
-# CodeVar 
+# CodeVar
 开发基于 `Javascript`、 `alfy`、`有道翻译api`;
 
-# 安装依赖
+# 依赖
 - Node.js 8+
 - Alfred 3 
 
-# 下载
-下载 dist 文件并点击运行;
+# 安装
+[点击下载](https://github.com/xudaolong/CodeVar/releases)
 
 # 开发趋向
 
@@ -34,3 +34,12 @@
 > 常量命名法:cl
 
 ![](./assets/img/常量命名法.jpg)
+
+# 作者
+关注作业有更多好用的小工具哦~
+
+![](./assets/img/公众号.jpg)
+
+# 其他作品
+
+[CodeExpander](https://github.com/oncework/codeexpander) 专为开发者开发的一个集输入增强、代码片段管理(支持 Markdown)为一体跨平台云同步的开发工具。
