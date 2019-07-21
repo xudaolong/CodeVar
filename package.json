@@ -1,12 +1,12 @@
 {
   "name": "CodeVar",
-  "version": "1.0.0",
-  "description": "翻译",
+  "version": "1.1.0",
+  "description": "生成可用的代码变量 (CodeVar that return u a better variable from Chinese to English . ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "xudaolong",
   "license": "ISC",
   "devDependencies": {
     "alfy": "^0.6.0"

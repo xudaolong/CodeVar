@@ -11,8 +11,8 @@
 
 'use strict';
 
-const config = require('./Configuration/variableGlobale.js');
-const style = require('./Configuration/variableStyle.js');
+const config = require('./src/config');
+const style = require('./src/style');
 
 (function () {
     style.core(config.youDaoApi,config.getParams(),style.hump);
