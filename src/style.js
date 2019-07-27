@@ -77,5 +77,19 @@ module.exports = {
             strArr[i] = strArr[i].toLowerCase();
         }
         return strArr.join('_');
+    },
+    underline: function (s) {
+        let strArr = filter.run(s);
+        for (let i = 0; i < strArr.length; i++) {
+            strArr[i] = strArr[i].toLowerCase();
+        }
+        return strArr.join('_');
+    },
+    hyphen: function (s) {
+        let strArr = filter.run(s);
+        for (let i = 0; i < strArr.length; i++) {
+            strArr[i] = strArr[i].toLowerCase();
+        }
+        return strArr.join('-');
     }
 };
