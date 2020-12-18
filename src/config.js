@@ -2,6 +2,7 @@
 
 const alfy = require('alfy');
 const sample = require('lodash.sample');
+const converts = require('chinese-conv');
 
 // 此 key 全采集于 github 上面 若有冒犯就先谢罪了啊哈...
 const FIXED_KEY = [
@@ -78,8 +79,7 @@ module.exports = {
                 type: 'data',
                 doctype: 'json',
                 version: '1.1',
-                q: alfy.input
-
+                q: converts.sify(alfy.input)
             }
         }
     },
