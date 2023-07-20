@@ -1,86 +1,39 @@
 'use strict';
 
 const alfy = require('alfy');
-const sample = require('lodash.sample');
+const SHA256 = require('crypto-js').SHA256
+const Hex = require('crypto-js/enc-hex')
 
-// 此 key 全采集于 github 上面 若有冒犯就先谢罪了啊哈...
-const FIXED_KEY = [
-    {
-        keyfrom: 'CoderVar',
-        key: '802458398'
-    },
-    {
-        keyfrom: 'whatMean',
-        key: '1933652137'
-    },
-    {
-        keyfrom: 'chinacache',
-        key: '1247577973'
-    },
-    {
-        keyfrom: 'huipblog',
-        key: '439918742'
-    },
-    {
-        keyfrom: 'chinacache',
-        key: '1247577973'
-    },
-    {
-        keyfrom: 'fanyi-node',
-        key: '593554388'
-    },
-    {
-        keyfrom: 'wbinglee',
-        key: '1127870837'
-    },
-    {
-        keyfrom: 'forum3',
-        key: '1268771022'
-    },
-    {
-        keyfrom: 'node-translator',
-        key: '2058911035'
-    },
-    {
-        keyfrom: 'kaiyao-robot',
-        key: '2016811247'
-    },
-    {
-        keyfrom: 'stone2083',
-        key: '1576383390'
-    },
-    {
-        keyfrom: 'myWebsite',
-        key: '423366321'
-    },
-    {
-        keyfrom: 'leecade',
-        key: '54015339'
-    },
-    {
-        keyfrom: 'github-wdict',
-        key: '619541059'
-    },
-    {
-        keyfrom: 'lanyuejin',
-        key: '2033774719'
-    },
-];
+function truncate(q){
+  var len = q.length;
+  if(len<=20) return q;
+  return q.substring(0, 10) + len + q.substring(len-10, len);
+}
 
 module.exports = {
-    youDaoApi: 'http://fanyi.youdao.com/openapi.do',
+    youDaoApi: 'http://openapi.youdao.com/api',
     getParams: function () {
-        let selected = sample(FIXED_KEY);
+        var appKey = '你自己的 appKey';
+        var key = ' 你自己的 secretKey';//注意：暴露appSecret，有被盗用造成损失的风险
+        var salt = (new Date).getTime();
+        var curtime = Math.round(new Date().getTime()/1000);
+        var query = alfy.input || '苹果';
+        // 多个query可以用\n连接  如 query='apple\norange\nbanana\npear'
+        var from = 'zh-CHS';
+        var to = 'en';
+        var str1 = appKey + truncate(query) + salt + curtime + key;
+        var sign = SHA256(str1).toString(Hex)
         return {
-            query: {
-                keyfrom: selected.keyfrom,
-                key: selected.key,
-                type: 'data',
-                doctype: 'json',
-                version: '1.1',
-                q: alfy.input
-
-            }
+          query: {
+            q: query,
+            appKey: appKey,
+            salt: salt,
+            from: from,
+            to: to,
+            sign: sign,
+            signType: "v3",
+            curtime: curtime,
+          }
         }
     },
     filter: {
