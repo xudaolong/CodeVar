@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>codevar</string>
-	<key>category</key>
-	<string>Tools</string>
+	<string>com.liuarui.codevar.workflow</string>
 	<key>connections</key>
 	<dict>
 		<key>0A329E4B-AB21-41F7-A869-D878DF4EAE92</key>
@@ -77,7 +75,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Xudaolong</string>
+	<string>liuarui</string>
 	<key>description</key>
 	<string>翻译</string>
 	<key>disabled</key>
@@ -93,6 +91,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -131,7 +131,7 @@
 			<key>uid</key>
 			<string>7058EC8E-E2B9-4134-A85D-C92BE50493FD</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -140,6 +140,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -178,7 +180,7 @@
 			<key>uid</key>
 			<string>8039E6FB-F0FA-419B-B00E-048A1DBA460A</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -187,6 +189,8 @@
 				<true/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
 				<key>transient</key>
 				<false/>
 			</dict>
@@ -195,7 +199,7 @@
 			<key>uid</key>
 			<string>0A329E4B-AB21-41F7-A869-D878DF4EAE92</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -204,6 +208,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -242,7 +248,7 @@
 			<key>uid</key>
 			<string>B7123C78-ADE3-48F7-A520-5BBA396F6EC9</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -251,6 +257,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -289,7 +297,7 @@
 			<key>uid</key>
 			<string>D8314C21-5801-4FB6-A5AE-7528C6AAF991</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -298,6 +306,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -336,57 +346,74 @@
 			<key>uid</key>
 			<string>D71A4F8E-5E0F-4842-8D86-FA949331C890</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>(fork自xudalong的 CodeVar)
+修复了有道切换api的问题</string>
 	<key>uidata</key>
 	<dict>
 		<key>0A329E4B-AB21-41F7-A869-D878DF4EAE92</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<real>500</real>
 			<key>ypos</key>
-			<integer>180</integer>
+			<real>180</real>
 		</dict>
 		<key>7058EC8E-E2B9-4134-A85D-C92BE50493FD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>20</integer>
+			<real>20</real>
 		</dict>
 		<key>8039E6FB-F0FA-419B-B00E-048A1DBA460A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>B7123C78-ADE3-48F7-A520-5BBA396F6EC9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>240</integer>
+			<real>240</real>
 		</dict>
 		<key>D71A4F8E-5E0F-4842-8D86-FA949331C890</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>480</integer>
+			<real>480</real>
 		</dict>
 		<key>D8314C21-5801-4FB6-A5AE-7528C6AAF991</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>350</integer>
+			<real>350</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variables</key>
+	<dict>
+		<key>appKey</key>
+		<string>3a85ada7b66ee343</string>
+		<key>key</key>
+		<string>Cb02EXWzBIShNJvhzxymrOgBB94B78df</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>key</string>
+		<string>appKey</string>
+	</array>
+	<key>version</key>
+	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/xudaolong/CodeVar</string>
+	<string>https://github.com/liuarui/CodeVar</string>
 </dict>
 </plist>
