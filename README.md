@@ -7,7 +7,8 @@ https://github.com/xudaolong/CodeVar
 
 # 调整
 
-修复了 xudaolong/CodeVar 旧版本有道 API 无法使用问题
+1. 修复了 xudaolong/CodeVar 旧版本有道 API 无法使用问题
+2. 调整 appKey 和 key 为 al 的 env 配置
 
 # 使用
 
@@ -18,6 +19,7 @@ https://github.com/xudaolong/CodeVar
    ![Alt text](./assets/img/image.png)
 
 3. 配置 workflow 环境变量（key 为应用密钥，appKey 为应用 id）
+   ![Alt text](./assets/img/2.png)
    ![Alt text](./assets/img/image-1.png)
 
 4. 开始使用
