@@ -23,10 +23,10 @@
 [申请有道智云个人账号](https://ai.youdao.com/console/#/)
 
 1. 添加应用
-![](./assets/1689933190058.jpg)
+![](./assets/img/1689933190058.jpg)
 2. 复制appkey和秘钥到指定位置
-![](./assets/1689933232996.jpg)
-![](./assets/1689933531891.jpg)
+![](./assets/img/1689933232996.jpg)
+![](./assets/img/1689933531891.jpg)
 
 
 # 效果
