@@ -20,7 +20,7 @@
 
 
 # 申请密钥
-[申请有道智云个人账号](https://ai.youdao.com/console/#/)
+[申请有道智云个人账号](https://ai.youdao.com/login.s)
 
 1. 添加应用
 ![](./assets/img/1689933190058.jpg)
