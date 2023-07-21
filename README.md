@@ -3,7 +3,7 @@
 
 # 依赖
 - Node.js 8+
-- Alfred 3 
+- Alfred 3
 
 # 安装
 [点击下载](https://github.com/xudaolong/CodeVar/releases)
@@ -18,7 +18,18 @@
 - 不要从每个单词中删除一个字符的方式来缩写。❎
 - 缩写要一致：如果将 function 缩写成 func。那么将整个项目里，最好都统一使用这种缩写。✔️
 
-# 效果 
+
+# 申请密钥
+[申请有道智云个人账号](https://ai.youdao.com/console/#/)
+
+1. 添加应用
+![](./assets/1689933190058.jpg)
+2. 复制appkey和秘钥到指定位置
+![](./assets/1689933232996.jpg)
+![](./assets/1689933531891.jpg)
+
+
+# 效果
 > 小驼峰命名法:xt
 
 ![](./assets/img/小驼峰命名法.jpg)
