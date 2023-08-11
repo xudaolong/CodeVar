@@ -13,8 +13,8 @@ function truncate(q){
 module.exports = {
     youDaoApi: 'http://openapi.youdao.com/api',
     getParams: function () {
-        var appKey = '你自己的 appKey';
-        var key = ' 你自己的 secretKey';//注意：暴露appSecret，有被盗用造成损失的风险
+        var appKey = process.env.key;
+        var key = process.env.secret; //注意：暴露appSecret，有被盗用造成损失的风险
         var salt = (new Date).getTime();
         var curtime = Math.round(new Date().getTime()/1000);
         var query = alfy.input || '苹果';
